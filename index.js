@@ -17,7 +17,7 @@ class CameraRollExtended {
 		let mediaType = 'photo';
 		if (type) {
 			mediaType = type;
-		} else if (['mov', 'mp4'].indexOf(tag.split('.').slice(-1)[0]) >= 0) {
+		} else if (['mov', 'mp4'].indexOf(tag.uri.split('.').slice(-1)[0]) >= 0) {
 			mediaType = 'video';
 		}
 
